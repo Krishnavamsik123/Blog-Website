@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Compose New Post</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Compose New Post</h1>
+        </div>
+
+        <form action="/compose" method="post">
+            <div class="form-group">
+                <label for="postTitle">Title</label>
+                <input type="text" name="postTitle" id="postTitle" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="postContent">Content</label>
+                <textarea name="postContent" id="postContent" rows="8" class="form-control" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Publish</button>
+            <a href="/" class="btn">Cancel</a>
+        </form>
+    </div>
+</body>
+</html>
